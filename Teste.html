@@ -1,58 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="">
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-        crossorigin="anonymous"
-      />    
-    <link rel="stylesheet" href="style.css" />
-    <title>Meu Template</title>
-  </head>
-  <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <img src="./Assets/logo-header.jfif" alt="">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
 
-              <div class="d-flex">
-                <span class="nav-item">
-                   <p>+55 62 3222-3222</p>
-                  </span>
-                  <span class="nav-item">
-                    <i class="fab fa-whatsapp"></i>
-                    +55 62 90920-9292
-                  </span>
-                </div>
-              
-                <div class="d-flex">
-                    <span class="nav-item">
-                        <a class="nav-link" href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                      </span>
-                      <span class="nav-item">
-                        <a class="nav-link" href="#">
-                          <i class="fab fa-youtube"></i>
-                        </a>
-                      </span>
-                    </div>
-              </div>
-            </div>
-          </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>JS/Bootstrap</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./Assets/logo-header.jfif" alt="Minha Loja de Móveis">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <p>+55 62 3222-3222</p>
+            </li>
+            <li class="nav-item">
+              <p><i class="fab fa-whatsapp"></i>+55 62 90920-9292</p>
+              </a>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fab fa-youtube"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row row-cols-6 bg-light">
+        <div class="col">
+          <a href="#">Home</a>
+        </div>
+        <div class="col">
+          <a href="#">Sobre</a>
+        </div>
+        <div class="col">
+          <a href="#">Ambiente Corporativo</a>
+        </div>
+        <div class="col">
+          <a href="#">Ambiente Residencial</a>
+        </div>
+        <div class="col">
+          <a href="#">Novidades</a>
+        </div>
+        <div class="col">
+          <a href="#">Contato</a>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container-fluid">
+        <p>Industria de móveis</p>
+        <p>experiente e atualizada</p>
+        <p>Há mais de 15 anos transformando sonhos em realidade</p>
+        <div class="row row-cols-2 bg-light">
+          <img src="./Assets/escritorio.jfif" class="w-50" alt="">
+          <img src="./Assets/salaB.jfif" class="w-50" alt="">
+        </div>  
+      </div>
+      <div class="container-fluid">
+        <div class="row row-cols-2 bg-light">
+          <img src="./Assets/adega.jfif" class="w-25" alt="">
+          <img src="./Assets/adega.jfif" class="w-25" alt="">
+        </div>  
+      </div>
+    </section>
+  </header>
 
 
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-      <script src="js/bootstrap.js"></script>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
 </html>
