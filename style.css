@@ -1,16 +1,123 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+.container-fluid{
+  padding: 0;
 }
-body{
-    background: grey;
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.header-title {
+  font-size: 64px;
+  line-height: 1;
 }
 
-.fa-whatsapp {
-    color: green;
-  }
-
-a{
-    text-decoration: none;
-    color: brown;
+.header-title > span {
+  font-weight: bold;
+  color: #9c704b;
 }
+
+.header-p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header-border {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  display: block;
+}
+
+.section-main {
+  min-height: 264px;
+  position: relative;
+  padding: 48px 0;
+  overflow: hidden;
+}
+.section-main::before {
+  position: absolute;
+  inset: 16px 0 0 -32px;
+  content: "Durini";
+  font-size: 340px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.ul-links li a {
+  color: grey;
+  text-decoration: none;
+}
+.ul-links {
+  list-style: none;
+}
+.ul-links li a.active {
+  color: brown;
+  font: bold;
+  font-weight: 500;
+}
+
+.section-image {
+  color: white;
+  font-size: 25px;
+}
+.section-image button {
+  background-color: transparent;
+  border: 1px solid white   ;
+  padding: 0;
+  color: white;
+  width: 50px;
+  height: 50px;
+
+}
+.section-image  button:active {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.carousel-indicators button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+}
+
+.carousel-title h3{
+  font-size:20px;
+  text-align: center;
+  padding: 5rem 0;
+}
+.carousel-title h3>b{
+ font-weight: 900;
+}
+
+.carousel-office{
+  margin-left: 20rem;
+}
+.carousel-title {
+  position: relative;
+}
+
+.vertical-text {
+  position: absolute;
+  top: 85%;
+  right: 100%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.vertical-text::before {
+  content: url(./Assets/circleremove.png);
+  position: absolute;
+  top: -15rem;
+  left: 9rem;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+

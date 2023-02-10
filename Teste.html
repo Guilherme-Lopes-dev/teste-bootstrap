@@ -9,80 +9,162 @@
   <link rel="stylesheet" href="">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
   <title>JS/Bootstrap</title>
 </head>
 
 <body>
-  <header class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./Assets/logo-header.jfif" alt="Minha Loja de Móveis">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <p>+55 62 3222-3222</p>
-            </li>
-            <li class="nav-item">
-              <p><i class="fab fa-whatsapp"></i>+55 62 90920-9292</p>
+  <header class="">
+
+    <div class="container-fluid" id="header-teste">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+        <div class="container">
+          <div class="row w-100">
+            <div class="col-6">
+              <a class="navbar-brand p-2" href="#">
+                <img src="./Assets/logo-header.jfif" height="50px" width="auto" alt="Minha Loja de Móveis">
               </a>
+            </div>
+
+            <div class="col-6">
+              <div class="d-flex justify-content-end gap-2 ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pt-3" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto d-flex  gap-5">
+                    <li class="nav-item">
+                      <p>+55 62 3222-3222</p>
+                    </li>
+                    <li class="nav-item">
+                      <span class="d-flex gap-3 align-content-center justify-content-center">
+                        <i class="fab fa-whatsapp py-1"></i>
+                        <p>+55 62 90920-9292</p>
+                      </span>
+                    </li>
+                    <div class="d-flex gap-3">
+                      <li>
+                        <i class="fab fa-instagram"></i>
+                      </li>
+                      <li>
+                        <i class="fab fa-youtube"></i>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- fim nav-->
+      <div class="container">
+        <nav class="" style="height: 64px;">
+          <ul class="d-flex justify-content-between align-items-center ul-links ">
+            <li class="">
+              <a class="active" href="#">Home</a>
             </li>
-            <li>
-              <i class="fab fa-instagram"></i>
+            <li class="">
+              <a href="#">Sobre</a>
             </li>
-            <li>
-              <i class="fab fa-youtube"></i>
+            <li class="">
+              <a href="#">Ambiente Corporativo</a>
+            </li>
+            <li class="">
+              <a href="#">Ambiente Residencial</a>
+            </li>
+            <li class="">
+              <a href="#">Novidades</a>
+            </li>
+            <li class="">
+              <a href="#">Contato</a>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row row-cols-6 bg-light">
-        <div class="col">
-          <a href="#">Home</a>
-        </div>
-        <div class="col">
-          <a href="#">Sobre</a>
-        </div>
-        <div class="col">
-          <a href="#">Ambiente Corporativo</a>
-        </div>
-        <div class="col">
-          <a href="#">Ambiente Residencial</a>
-        </div>
-        <div class="col">
-          <a href="#">Novidades</a>
-        </div>
-        <div class="col">
-          <a href="#">Contato</a>
-        </div>
+        </nav>
       </div>
     </div>
-    <section>
-      <div class="container-fluid">
-        <p>Industria de móveis</p>
-        <p>experiente e atualizada</p>
-        <p>Há mais de 15 anos transformando sonhos em realidade</p>
-        <div class="row row-cols-2 bg-light">
-          <img src="./Assets/escritorio.jfif" class="w-50" alt="">
-          <img src="./Assets/salaB.jfif" class="w-50" alt="">
-        </div>  
-      </div>
-      <div class="container-fluid">
-        <div class="row row-cols-2 bg-light">
-          <img src="./Assets/adega.jfif" class="w-25" alt="">
-          <img src="./Assets/adega.jfif" class="w-25" alt="">
-        </div>  
+  </header>
+  <main>
+    <section class="container-fluid section-main">
+      <div class="container position-relative">
+        <div class="row d-flex align-items-center gap-4">
+          <div class="col-md-8">
+            <h2 class="header-title">
+              Indústria de móveis
+              <span>experiente e atualizada</span>
+            </h2>
+          </div>
+          <div class="col-md-1">
+            <div class="header-border">
+            </div>
+          </div>
+          <div class="col col-md-2">
+            <p class="header-p">Há mais de <b>15 anos</b> transformando sonhos em realidade</p>
+          </div>
+        </div>
       </div>
     </section>
-  </header>
+
+    <section class="container-fluid section-image">
+      <div class="d-flex">
+        <div class="position-relative w-50">
+          <div class="d-flex justify-content-end">
+            <img src="/Assets/escritorio.jfif" class="w-100" height="350px">
+            <div class="d-flex align-items-center justify-content-around position-absolute"
+              style="top: 0; bottom: 0; left: 0; right: 0;">
+              <p>Ambientes Corporativos</p>
+              <button class="btn btn-lg btn-default">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative w-50">
+          <div class="d-flex justify-content-start ">
+            <img src="/Assets/sala3.jfif" class="w-100" height="350px">
+            <div class="d-flex align-items-center justify-content-around position-absolute"
+              style="top: 0; bottom: 0; left: 0; right: 0;">
+              <p>Ambientes Residenciais</p>
+              <button class="btn btn-lg btn-default">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container-fluid section-carousel">
+      <div class="d-flex justify-content-center align-content-center w-100 carousel-title">
+        <h3 class="w-50">Com a equipe <b>qualificada e experiente</b>, fábrica própia e estrutura sólida, executamos
+          projetos de mobiliário residencial sob medida e obras corporativas completas</h3>
+      </div>
+      <div class="w-25 carousel-office">
+        <div id="carousel-chair" class="carousel slide" data-bs-ride="carousel">
+        <div class="vertical-text">Corporativo</div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-chair" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-chair" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-chair" data-bs-slide-to="2"
+              aria-label="Slide 3"></but  ton>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Assets/cadeiracorporativo.png" width="500px" height="300px" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./Assets/cadeiracorporativo.png" width="500px" height="300px" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./Assets/cadeiracorporativo.png" width="500px" height="300px" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
 
 
 
